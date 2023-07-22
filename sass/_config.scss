@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+$black: #293241;
+$bg1: #EFDEAF;
+$primary: #425BAB;
+$secondary: #EE6C4D;
+$browny2: #BA7411;
+$blue1: #425BAB;
+
+$lightText: #EEEDE0;
+
+$pop: 'Poppins', sans-serif;
+$mont: 'Montserrat', sans-serif;
+
+$bod: 2px solid red;
+$bod2: 2px solid blue;
+$bod3: 2px solid green  ;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: .5s ease;
+}

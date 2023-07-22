@@ -1,0 +1,2475 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.5s ease;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  color: #293241;
+}
+
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 1rem;
+  z-index: 99;
+  background: #EFDEAF;
+}
+header .nav-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-left: 128px;
+  padding-right: 128px;
+}
+header .nav-container .logo img {
+  max-height: 86px;
+}
+header .nav-container nav {
+  width: 50vw;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-left: -86px;
+}
+header .nav-container nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 1rem;
+  transition: 0.5s ease;
+}
+header .nav-container nav ul li:hover {
+  transform: scale(1.06);
+}
+header .nav-container nav ul li a {
+  padding: 1rem;
+  text-decoration: none;
+  color: #293241;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  transition: 0.5s ease;
+}
+header .nav-container nav ul li a:hover {
+  color: #425BAB;
+}
+
+.hamburger {
+  position: relative;
+  display: block;
+  width: 35px;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  z-index: 10;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #293241;
+  margin: 6px 0px;
+  transition: 0.5s;
+}
+
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 5;
+  background-color: #EFDEAF;
+  padding-top: 150px;
+  transition: 0.5s;
+}
+
+.mobile-nav.is-active {
+  left: 0;
+}
+
+.mobile-nav a {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 12px 16px;
+  color: #293241;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.mobile-nav a:hover {
+  background-color: #EFDEAF;
+}
+
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .hide-mob {
+    display: none;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.5rem 4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.563rem;
+  color: #EEEDE0;
+  background: #BA7411;
+  transition: 0.5s ease;
+}
+.btn i {
+  margin-left: 0.5rem;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background: #EFDEAF;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+}
+footer .inner-section {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer .inner-section .div h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.524rem;
+  color: #425BAB;
+  margin-bottom: 0.5rem;
+}
+footer .inner-section .div a, footer .inner-section .div p {
+  color: #293241;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1rem;
+  transition: 0.5s ease;
+}
+footer .inner-section .div a:hover {
+  color: #425BAB;
+  transform: scale(1.07);
+}
+footer .inner-section .div .socials {
+  margin-top: 0.5rem;
+  display: flex;
+}
+footer .inner-section .div .socials i {
+  color: #293241;
+  margin-right: 1rem;
+  transition: 0.5s ease;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+footer .inner-section .div .socials i:hover {
+  transform: scale(1.1);
+}
+footer #copy {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-top: 2rem;
+}
+
+#bottom {
+  height: 400px;
+}
+
+.landing {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  background: #EFDEAF;
+  padding: 8rem 0 4rem 0;
+}
+.landing .top-section {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  z-index: 2;
+}
+.landing .top-section .txtDiv {
+  color: #425BAB;
+}
+.landing .top-section .txtDiv h2 {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 4.7rem;
+  z-index: 5;
+  line-height: 6rem;
+}
+.landing .top-section .txtDiv #nakuru {
+  color: #293241;
+  opacity: 0;
+}
+.landing .top-section .txtDiv #line {
+  position: relative;
+  display: inline-block;
+  border-bottom: 8px solid #425BAB;
+  width: 200px;
+  margin-right: 2rem;
+  bottom: 0.8rem;
+}
+.landing .top-section .txtDiv #platform {
+  background: #EFDEAF;
+  padding-right: 1.5rem;
+}
+.landing .top-section .imgDiv {
+  position: relative;
+}
+.landing .top-section .imgDiv img {
+  margin: 3rem 0 0 -6.5rem;
+  height: 293px;
+}
+.landing .lower-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 12rem;
+}
+.landing .lower-section p {
+  color: #293241;
+  text-align: center;
+  width: 200px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.landing .lower-section #center {
+  border-left: 1.5px solid #293241;
+  border-right: 1.5px solid #293241;
+  width: 300px;
+  padding: 1rem 50px;
+}
+.landing #sustainability {
+  top: 22rem;
+  left: -3rem;
+  position: absolute;
+  z-index: 1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 13.87rem;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.toDV {
+  position: relative;
+  min-height: 734px;
+  padding: 14rem 0;
+  background: linear-gradient(75.82deg, rgba(243, 243, 237, 0.9) 44.1%, rgba(243, 243, 237, 0) 85.13%), url(../images/eb1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.toDV .innerContainer {
+  width: 80vw;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.toDV .innerContainer p {
+  font-size: 1.563rem;
+  color: #425BAB;
+  margin-bottom: 1.5rem;
+}
+.toDV .innerContainer h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 3.052rem;
+  color: #293241;
+  margin-bottom: 0.2rem;
+}
+.toDV .innerContainer #toDv {
+  margin-top: 6rem;
+  display: inline-block;
+}
+
+.model {
+  background: rgba(186, 116, 17, 0.03);
+}
+.model .inner-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  width: 80vw;
+  margin: 0 auto;
+  padding: 8rem 0;
+}
+.model .inner-section .leftDiv {
+  width: 50vw;
+}
+.model .inner-section .leftDiv p {
+  color: #293241;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.563rem;
+}
+.model .inner-section .leftDiv p span {
+  font-size: 2.441rem;
+  color: #BA7411;
+  font-weight: 600;
+}
+.model .inner-section .rightDiv img {
+  height: 250px;
+}
+
+.doSection {
+  position: relative;
+  background: #EFDEAF;
+}
+.doSection .inner-section {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 10rem 0;
+}
+.doSection .inner-section h4 {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.815rem;
+  color: #293241;
+  line-height: 4.4rem;
+  font-weight: 600;
+}
+.doSection .inner-section h4 span {
+  color: #425BAB;
+}
+.doSection .inner-section #line {
+  position: relative;
+  display: inline-block;
+  border-bottom: 5px solid #425BAB;
+  width: 190px;
+  margin-right: 0.5rem;
+  bottom: 0.2rem;
+}
+.doSection .inner-section .section1 {
+  margin-top: 4rem;
+  display: flex;
+  gap: 10rem;
+}
+.doSection .inner-section .section1 .text {
+  width: 580px;
+}
+.doSection .inner-section .section1 .text p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.563rem;
+  color: #293241;
+}
+.doSection .inner-section .section1 .text p span {
+  color: #425BAB;
+}
+.doSection .inner-section .section1 .image {
+  margin-top: 3rem;
+  position: relative;
+}
+.doSection .inner-section .section1 .image #img1 {
+  position: relative;
+  height: 187px;
+  width: 406px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.doSection .inner-section .section1 .image #img2 {
+  position: absolute;
+  height: 222px;
+  width: 427px;
+  top: 7.5rem;
+  left: -12rem;
+}
+.doSection .inner-section .section2 {
+  margin-top: 18rem;
+  display: flex;
+  gap: 10rem;
+}
+.doSection .inner-section .section2 .image {
+  position: relative;
+}
+.doSection .inner-section .section2 .image #img1 {
+  position: relative;
+  height: 187px;
+  width: 406px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.doSection .inner-section .section2 .image #img2 {
+  position: absolute;
+  height: 222px;
+  width: 427px;
+  top: 7rem;
+  right: -14rem;
+}
+.doSection .inner-section .section2 .text {
+  margin-left: -1rem;
+  width: 580px;
+}
+.doSection .inner-section .section2 .text p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.563rem;
+  color: #293241;
+}
+.doSection .inner-section .section2 .text p span {
+  color: #425BAB;
+}
+.doSection .inner-section .lowerText {
+  margin-left: 205px;
+  margin-top: 12rem;
+  width: 580px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.563rem;
+  color: #293241;
+}
+.doSection .inner-section .lowerText span {
+  color: #425BAB;
+}
+
+.toTeams {
+  padding: 12rem 0;
+  background: linear-gradient(0deg, rgba(253, 251, 248, 0.92), rgba(253, 251, 248, 0.92)), url(../images/team.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.toTeams .inner-section {
+  width: 80vw;
+  margin: 0 auto;
+}
+.toTeams .inner-section h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 3.052rem;
+  color: #BA7411;
+  line-height: 4rem;
+}
+.toTeams .inner-section #lowerH4 {
+  padding-left: 4rem;
+  margin-bottom: 1rem;
+}
+.toTeams .inner-section .team {
+  display: flex;
+  color: #293241;
+  gap: 1rem;
+}
+.toTeams .inner-section .team .icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.toTeams .inner-section .team .icon span {
+  display: block;
+  height: 2px;
+  width: 40px;
+  background: #293241;
+  margin-bottom: 0.3rem;
+}
+.toTeams .inner-section .team .icon .lowerLine {
+  margin-left: 0.5rem;
+}
+.toTeams .inner-section .team .text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 2.441rem;
+  line-height: 4rem;
+}
+.toTeams .inner-section #toTeams {
+  margin-top: 4rem;
+}
+
+.takes {
+  background: #FDFBF8;
+  padding: 8rem 0;
+}
+.takes .inner-section {
+  width: 80vw;
+  margin: 0 auto;
+}
+.takes .inner-section h4 {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.815rem;
+  color: #293241;
+  line-height: 4.4rem;
+  font-weight: 600;
+}
+.takes .inner-section h4 span {
+  color: #425BAB;
+}
+.takes .inner-section #line {
+  position: relative;
+  display: inline-block;
+  border-bottom: 5px solid #425BAB;
+  width: 190px;
+  margin-right: 0.5rem;
+  bottom: 0.2rem;
+}
+.takes .inner-section .upper-part, .takes .inner-section .lower-part {
+  margin-top: 3rem;
+  display: flex;
+}
+.takes .inner-section .upper-part .box img, .takes .inner-section .lower-part .box img {
+  display: block;
+  height: 282px;
+}
+.takes .inner-section .upper-part .box p, .takes .inner-section .lower-part .box p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+.takes .inner-section .upper-part #box2, .takes .inner-section .lower-part #box2 {
+  margin-top: 9rem;
+  margin-left: -5rem;
+}
+.takes .inner-section .upper-part #box3, .takes .inner-section .lower-part #box3 {
+  margin-top: 18rem;
+  margin-left: -6rem;
+}
+
+.we-are {
+  background: linear-gradient(0deg, #EFDEAF -1.29%, #FDFBF8 100%);
+  padding: 8rem 0;
+}
+.we-are .inner-section {
+  display: flex;
+  gap: 3rem;
+  width: 80vw;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  color: #425BAB;
+}
+.we-are .inner-section .leftDiv {
+  display: flex;
+  align-items: center;
+}
+.we-are .inner-section .leftDiv p {
+  font-size: 9.313rem;
+}
+.we-are .inner-section .rightDiv {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 2rem;
+}
+.we-are .inner-section .rightDiv p {
+  font-size: 3.815rem;
+  margin-bottom: 2rem;
+}
+.we-are .inner-section .rightDiv #p2 {
+  font-style: normal;
+  margin-left: 4rem;
+  color: #293241;
+}
+.we-are .inner-section .rightDiv #p3 {
+  margin-left: 9rem;
+}
+.we-are #joinBtn {
+  display: block;
+  width: 350px;
+  margin: 0 auto;
+  background: #293241;
+  margin-top: 4rem;
+}
+
+.veges header {
+  background: #E5E8F2;
+}
+.veges .vLanding {
+  padding: 6rem 0 8rem 10vw;
+  background: #E5E8F2;
+}
+.veges .vLanding .inner-section {
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  width: 80vw;
+  margin: 0 auto;
+}
+.veges .vLanding .inner-section .leftDiv img {
+  height: 360px;
+}
+.veges .vLanding .inner-section .rightDiv {
+  margin-top: 4rem;
+}
+.veges .vLanding .inner-section .rightDiv h2 {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 3.815rem;
+  color: #293241;
+  line-height: 5.6rem;
+}
+.veges .vLanding .inner-section .rightDiv h2 span {
+  color: #BA7411;
+}
+.veges .vLanding .inner-section .rightDiv h2 #line {
+  position: relative;
+  display: inline-block;
+  border-bottom: 5px solid #293241;
+  width: 77px;
+  margin-right: 0.6rem;
+  bottom: 0.2rem;
+}
+.veges .vLanding .inner-section .rightDiv #topH2 {
+  margin-left: -23.6rem;
+  background: #E5E8F2;
+  padding: 0.5rem 1.2rem;
+}
+.veges .buy {
+  background: linear-gradient(0deg, rgba(229, 232, 242, 0.8), rgba(229, 232, 242, 0.9)), url(../images/eb1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10vw;
+}
+.veges .buy .inner-section {
+  width: 80vw;
+  margin: 0 auto;
+}
+.veges .buy .inner-section #up {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.3rem;
+  color: #BA7411;
+  margin-bottom: 1.5rem;
+}
+.veges .buy .inner-section #bottom {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 2.5rem;
+  font-size: 1.6rem;
+  margin-bottom: 0rem;
+  height: auto;
+}
+.veges .buy .inner-section #buyBtn {
+  background: #293241;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.563rem;
+}
+.veges .objectives {
+  background: #EEEDE0;
+  padding: 8rem 0 8rem 0;
+}
+.veges .objectives .inner-section {
+  width: 70vw;
+  margin: 0 auto;
+}
+.veges .objectives .inner-section .part1 {
+  margin-bottom: 3rem;
+}
+.veges .objectives .inner-section .part1 h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #425BAB;
+  font-size: 1.953rem;
+}
+.veges .objectives .inner-section .part1 p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.953rem;
+  color: #293241;
+}
+.veges .objectives .inner-section .part2 {
+  margin-bottom: 15rem;
+  display: flex;
+  justify-content: space-between;
+}
+.veges .objectives .inner-section .part2 .leftDiv {
+  width: 600px;
+  margin-top: 8rem;
+}
+.veges .objectives .inner-section .part2 .leftDiv h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #BA7411;
+  font-size: 1.953rem;
+  margin-bottom: 1.2rem;
+}
+.veges .objectives .inner-section .part2 .leftDiv p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #293241;
+  font-size: 1.953rem;
+  margin-bottom: 2rem;
+}
+.veges .objectives .inner-section .part2 .rightDiv {
+  width: 307px;
+  height: 430px;
+}
+.veges .objectives .inner-section .part2 .rightDiv img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.veges .objectives .inner-section .part3 {
+  display: flex;
+  justify-content: space-between;
+}
+.veges .objectives .inner-section .part3 .leftDiv {
+  width: 366px;
+  height: 549px;
+}
+.veges .objectives .inner-section .part3 .leftDiv img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 30%;
+     object-position: 30%;
+}
+.veges .objectives .inner-section .part3 .rightDiv {
+  width: 584px;
+  margin-top: 3rem;
+}
+.veges .objectives .inner-section .part3 .rightDiv h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #BA7411;
+  font-size: 1.953rem;
+  margin-bottom: 1rem;
+}
+.veges .objectives .inner-section .part3 .rightDiv p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #293241;
+  font-size: 1.563rem;
+  margin-bottom: 2rem;
+}
+.veges .objectives .inner-section .part3 .rightDiv p span {
+  color: #425BAB;
+  font-weight: 500;
+}
+.veges .faqs {
+  background: linear-gradient(0deg, rgba(238, 237, 224, 0.9), rgba(238, 237, 224, 0.9)), url(../images/eb1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 8rem 0 8rem 10vw;
+}
+.veges .faqs .container {
+  width: 80vw;
+  margin: 0 auto;
+}
+.veges .faqs .container h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 3.052rem;
+  color: #BA7411;
+}
+.veges .faqs .container #lowerH5 {
+  padding-left: 2rem;
+}
+.veges .faqs .container .accordion {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem 0;
+}
+.veges .faqs .container .accordion-item {
+  color: #293241;
+  margin: 1rem 0;
+  border-bottom: 1px solid #293241;
+}
+.veges .faqs .container .accordion-item-header {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.563rem;
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.991rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.veges .faqs .container .accordion-item-header::after {
+  content: "+";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  transition: 0.5s ease-out;
+}
+.veges .faqs .container .accordion-item-header.active::after {
+  content: "−";
+  transition: 0.5s ease-out;
+}
+.veges .faqs .container .accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+.veges .faqs .container .accordion-item-body-content {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  padding: 1rem;
+  line-height: 1.593rem;
+  border-top: 1px solid;
+  -o-border-image: linear-gradient(to right, transparent, #293241, transparent) 1;
+     border-image: linear-gradient(to right, transparent, #293241, transparent) 1;
+}
+@media (max-width: 600px) {
+  .veges .faqs .container .accordion {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .veges .faqs .container .accordion-item {
+    margin: 0.8rem 0;
+    border-bottom: 1px solid #293241;
+  }
+  .veges .faqs .container .accordion-item-header {
+    font-size: 1rem;
+    padding: 0.5rem 2rem 0.5rem 0rem;
+    min-height: 3.5rem;
+    line-height: 1.991rem;
+  }
+  .veges .faqs .container .accordion-item-header::after {
+    font-size: 1.2rem;
+  }
+  .veges .faqs .container .accordion-item-body-content {
+    font-size: 0.9rem;
+    padding: 1rem 0;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1400px) {
+  .veges .faqs .container .accordion {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .veges .faqs .container .accordion-item-header {
+    font-size: 1.2rem;
+    padding: 0.5rem 2rem 0.5rem 0rem;
+  }
+  .veges .faqs .container .accordion-item-body-content {
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+  }
+}
+.veges footer {
+  padding-top: 4rem;
+}
+
+.teams header {
+  background: #E5E8F2;
+}
+.teams .tLanding {
+  padding: 12rem 0;
+  background: #E5E8F2;
+}
+.teams .tLanding .container {
+  width: 80vw;
+  margin: 0 auto;
+}
+.teams .tLanding .container .card {
+  text-align: center;
+}
+.teams .tLanding .container .card .imageDiv {
+  width: 162px;
+  height: 162px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.teams .tLanding .container .card .imageDiv img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.teams .tLanding .container .card h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-bottom: 0.4rem;
+  color: #425BAB;
+}
+.teams .tLanding .container .card p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+.teams .tLanding .container .card span {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.teams .tLanding .container .upperDiv {
+  margin-bottom: 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+.teams .tLanding .container .upperDiv .centerDiv {
+  margin-top: -5rem;
+}
+.teams .tLanding .container .upperDiv .centerDiv h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 3.815rem;
+}
+.teams .tLanding .container .upperDiv .centerDiv #joinBtn {
+  border-radius: 67px;
+  background: #425BAB;
+  display: block;
+  width: 260px;
+  margin: 0 auto;
+  margin-top: 3.5rem;
+}
+.teams .tLanding .container .lowerDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 42vw;
+  margin: 0 auto;
+  padding-right: 2vw;
+}
+.teams .teamsSection {
+  background: rgba(186, 116, 17, 0.03);
+  padding: 12rem 0 4rem 0;
+}
+.teams .teamsSection .team {
+  margin-bottom: 8rem;
+}
+.teams .teamsSection .team h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 3.052rem;
+  text-align: center;
+  color: #BA7411;
+  margin-bottom: 3rem;
+}
+.teams .teamsSection .team .cards-container {
+  width: 70vw;
+  max-width: 990px;
+  margin: 0 auto;
+  display: flex;
+  gap: 103px;
+  flex-wrap: wrap;
+}
+.teams .teamsSection .team .cards-container .card {
+  background: #EEEDE0;
+  text-align: center;
+  width: 260px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.teams .teamsSection .team .cards-container .card:hover {
+  transform: scale(1.06);
+}
+.teams .teamsSection .team .cards-container .card .imageDiv {
+  width: 160.81px;
+  height: 160.81px;
+  border-radius: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.teams .teamsSection .team .cards-container .card .imageDiv img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.teams .teamsSection .team .cards-container .card p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #293241;
+  margin-bottom: 0.8rem;
+}
+.teams .teamsSection .team .cards-container .card .name {
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+.teams .teamsSection .team .cards-container .card .uni {
+  color: #BA7411;
+}
+.teams .teamsSection .team .cards-container .card .title {
+  font-style: italic;
+}
+.teams .teamsSection .team .blue1 {
+  color: #425BAB;
+}
+.teams footer {
+  padding-top: 4rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .btn {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    font-size: 0.8rem;
+    color: #EEEDE0;
+    background: #BA7411;
+    transition: 0.5s ease;
+  }
+  .btn i {
+    margin-left: 0.5rem;
+  }
+  header {
+    padding-top: 0;
+  }
+  header .nav-container {
+    padding-left: 1rem;
+    padding-right: 2rem;
+  }
+  header .nav-container .logo img {
+    height: 66px;
+  }
+  header .nav-container nav {
+    display: none;
+  }
+  .landing {
+    min-height: 35vh;
+    padding: 3rem 0 2rem 0;
+  }
+  .landing .top-section {
+    width: 90vw;
+    z-index: 2;
+  }
+  .landing .top-section .txtDiv h2 {
+    font-size: 1.6rem;
+    z-index: 5;
+    line-height: 2rem;
+  }
+  .landing .top-section .txtDiv #line {
+    border-bottom: 3px solid #425BAB;
+    width: 62px;
+    margin-right: 0.6rem;
+    bottom: 0.1rem;
+  }
+  .landing .top-section .txtDiv #platform {
+    padding-right: 0.3rem;
+  }
+  .landing .top-section .imgDiv {
+    position: relative;
+  }
+  .landing .top-section .imgDiv img {
+    margin: 1.2rem 0 0 -1.5rem;
+    height: 25vw;
+  }
+  .landing .lower-section {
+    width: 80vw;
+    margin-top: 4rem;
+  }
+  .landing .lower-section p {
+    text-align: center;
+    width: 45%;
+    font-size: 0.8rem;
+  }
+  .landing .lower-section #center {
+    display: none;
+  }
+  .landing #sustainability {
+    top: 8.4rem;
+    left: -0.5rem;
+    z-index: 1;
+    font-size: 3.4rem;
+  }
+  .toDV {
+    min-height: 20vh;
+    padding: 4rem 0;
+  }
+  .toDV .innerContainer {
+    width: 80vw;
+  }
+  .toDV .innerContainer p {
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+  }
+  .toDV .innerContainer h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+  }
+  .toDV .innerContainer #toDv {
+    margin-top: 1.2rem;
+  }
+  .model .inner-section {
+    gap: 0rem;
+    width: 90vw;
+    padding: 4rem 0;
+  }
+  .model .inner-section .leftDiv {
+    width: 60vw;
+  }
+  .model .inner-section .leftDiv p {
+    font-size: 0.8rem;
+  }
+  .model .inner-section .leftDiv p span {
+    font-size: 1rem;
+  }
+  .model .inner-section .rightDiv img {
+    height: 100px;
+  }
+  .doSection {
+    position: relative;
+    background: #EFDEAF;
+  }
+  .doSection .inner-section {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 4rem 0;
+  }
+  .doSection .inner-section h4 {
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+  }
+  .doSection .inner-section #line {
+    border-bottom: 3px solid #425BAB;
+    width: 70px;
+    margin-right: 0.3rem;
+    bottom: 0.1rem;
+  }
+  .doSection .inner-section .section1 {
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .doSection .inner-section .section1 .text {
+    width: 100%;
+  }
+  .doSection .inner-section .section1 .text p {
+    font-size: 1rem;
+  }
+  .doSection .inner-section .section1 .image {
+    margin-top: 0rem;
+  }
+  .doSection .inner-section .section1 .image #img1 {
+    left: 4rem;
+    height: auto;
+    width: 70vw;
+  }
+  .doSection .inner-section .section1 .image #img2 {
+    height: auto;
+    width: 70vw;
+    top: 5.5rem;
+    left: 0rem;
+  }
+  .doSection .inner-section .section2 {
+    margin-top: 6rem;
+    gap: 1rem;
+    flex-direction: column-reverse;
+  }
+  .doSection .inner-section .section2 .image {
+    margin-top: 0rem;
+  }
+  .doSection .inner-section .section2 .image #img1 {
+    left: 0rem;
+    height: auto;
+    width: 70vw;
+  }
+  .doSection .inner-section .section2 .image #img2 {
+    height: auto;
+    width: 70vw;
+    top: 5.5rem;
+    right: 0rem;
+  }
+  .doSection .inner-section .section2 .text {
+    margin-left: 0rem;
+    width: 100%;
+  }
+  .doSection .inner-section .section2 .text p {
+    font-size: 1rem;
+  }
+  .doSection .inner-section .lowerText {
+    margin-left: 0px;
+    margin-top: 8rem;
+    width: 80vw;
+    font-size: 1rem;
+  }
+  .toTeams {
+    padding: 3rem 0;
+  }
+  .toTeams .inner-section {
+    width: 90vw;
+  }
+  .toTeams .inner-section h4 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  .toTeams .inner-section #lowerH4 {
+    padding-left: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .toTeams .inner-section .team {
+    gap: 0.5rem;
+  }
+  .toTeams .inner-section .team .icon span {
+    height: 1px;
+    width: 20px;
+    margin-bottom: 0.2rem;
+  }
+  .toTeams .inner-section .team .icon .lowerLine {
+    margin-left: 0.2rem;
+  }
+  .toTeams .inner-section .team .text {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  .toTeams .inner-section #toTeams {
+    margin-top: 2rem;
+  }
+  .takes {
+    padding: 3rem 0;
+  }
+  .takes .inner-section {
+    width: 90vw;
+  }
+  .takes .inner-section h4 {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+  }
+  .takes .inner-section #line {
+    border-bottom: 3px solid #425BAB;
+    width: 20px;
+    margin-right: 0.3rem;
+    bottom: 0.1rem;
+  }
+  .takes .inner-section .upper-part, .takes .inner-section .lower-part {
+    margin-top: 1.3rem;
+  }
+  .takes .inner-section .upper-part .box img, .takes .inner-section .lower-part .box img {
+    height: 120px;
+  }
+  .takes .inner-section .upper-part .box p, .takes .inner-section .lower-part .box p {
+    font-size: 0.6rem;
+  }
+  .takes .inner-section .upper-part #box2, .takes .inner-section .lower-part #box2 {
+    margin-top: 6rem;
+    margin-left: -3rem;
+  }
+  .takes .inner-section .upper-part #box3, .takes .inner-section .lower-part #box3 {
+    display: none;
+  }
+  .we-are {
+    padding: 3rem 0;
+  }
+  .we-are .inner-section {
+    gap: 0.5rem;
+    width: 90vw;
+  }
+  .we-are .inner-section .leftDiv p {
+    font-size: 1.8rem;
+  }
+  .we-are .inner-section .rightDiv {
+    margin-top: 0.2rem;
+  }
+  .we-are .inner-section .rightDiv p {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+  }
+  .we-are .inner-section .rightDiv #p2 {
+    font-style: normal;
+    margin-left: 2rem;
+    color: #293241;
+  }
+  .we-are .inner-section .rightDiv #p3 {
+    margin-left: 4rem;
+  }
+  .we-are #joinBtn {
+    width: 180px;
+    margin-top: 4rem;
+  }
+  footer {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+  footer .inner-section {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+  footer .inner-section .div {
+    text-align: center;
+  }
+  footer .inner-section .div h6 {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+  }
+  footer .inner-section .div a, footer .inner-section .div p {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+  }
+  footer .inner-section .div .socials {
+    margin-top: 0.4rem;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .inner-section .div .socials i {
+    margin-right: 1rem;
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+  footer #copy {
+    font-size: 0.6rem;
+    margin-top: 1.5rem;
+  }
+  .veges .vLanding {
+    padding: 3rem 0 4rem 0vw;
+  }
+  .veges .vLanding .inner-section {
+    gap: 0.8rem;
+    width: 90vw;
+  }
+  .veges .vLanding .inner-section .leftDiv img {
+    height: 37vw;
+  }
+  .veges .vLanding .inner-section .rightDiv {
+    margin-top: 2rem;
+  }
+  .veges .vLanding .inner-section .rightDiv h2 {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+  .veges .vLanding .inner-section .rightDiv h2 #line {
+    display: none;
+  }
+  .veges .vLanding .inner-section .rightDiv #topH2 {
+    margin-left: -7.6rem;
+    padding: 0.1rem 0.4rem;
+  }
+  .veges .buy {
+    height: 274px;
+    padding-left: 0vw;
+  }
+  .veges .buy .inner-section p {
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+  }
+  .veges .buy .inner-section h5 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .veges .buy .inner-section #buyBtn {
+    font-size: 1rem;
+  }
+  .veges .objectives {
+    padding: 4rem 0 4rem 0;
+  }
+  .veges .objectives .inner-section {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .veges .objectives .inner-section .part1 {
+    margin-bottom: 2rem;
+  }
+  .veges .objectives .inner-section .part1 h3 {
+    font-size: 1.1rem;
+  }
+  .veges .objectives .inner-section .part1 p {
+    font-size: 1rem;
+  }
+  .veges .objectives .inner-section .part2 {
+    margin-bottom: 3rem;
+    flex-direction: column-reverse;
+  }
+  .veges .objectives .inner-section .part2 .leftDiv {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .veges .objectives .inner-section .part2 .leftDiv h5 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .veges .objectives .inner-section .part2 .leftDiv p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .veges .objectives .inner-section .part2 .rightDiv img {
+    width: 70vw;
+  }
+  .veges .objectives .inner-section .part3 {
+    flex-direction: column;
+  }
+  .veges .objectives .inner-section .part3 .leftDiv img {
+    width: 70vw;
+    height: auto;
+  }
+  .veges .objectives .inner-section .part3 .rightDiv {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .veges .objectives .inner-section .part3 .rightDiv h5 {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
+  .veges .objectives .inner-section .part3 .rightDiv p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .veges .faqs {
+    padding: 4rem 0 4rem 0vw;
+  }
+  .veges .faqs .container {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .veges .faqs .container h5 {
+    font-size: 1.5rem;
+  }
+  .veges .faqs .container #lowerH5 {
+    padding-left: 1rem;
+  }
+  .teams .tLanding {
+    padding: 4rem 0;
+  }
+  .teams .tLanding .container .upperDiv {
+    margin-bottom: 3rem;
+    gap: 3rem;
+    flex-direction: column-reverse;
+  }
+  .teams .tLanding .container .upperDiv .centerDiv {
+    order: 1;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+  }
+  .teams .tLanding .container .upperDiv .centerDiv h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .teams .tLanding .container .upperDiv .centerDiv #joinBtn {
+    width: 138px;
+    margin-top: 1.5rem;
+  }
+  .teams .tLanding .container .lowerDiv {
+    gap: 3rem;
+    flex-direction: column;
+    width: 80vw;
+  }
+  .teams .teamsSection {
+    padding: 3rem 0 3rem 0;
+  }
+  .teams .teamsSection .team {
+    margin-bottom: 4rem;
+  }
+  .teams .teamsSection .team h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+  }
+  .teams .teamsSection .team .cards-container {
+    width: 70vw;
+    gap: 3rem;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1300px) {
+  header .nav-container {
+    gap: 10vw;
+    padding-left: 1.4rem;
+    padding-right: 4rem;
+  }
+  header .nav-container nav {
+    width: auto;
+    margin-left: 0px;
+  }
+  header .nav-container nav ul li a {
+    font-size: 1.1rem;
+  }
+  .btn {
+    padding: 1.2rem 3.6rem;
+    font-size: 1.2rem;
+  }
+  .landing {
+    padding: 5rem 0 3rem 0;
+    min-height: 80vh;
+  }
+  .landing .top-section {
+    width: 810px;
+  }
+  .landing .top-section .txtDiv h2 {
+    font-size: 3.8rem;
+    line-height: 4.8rem;
+  }
+  .landing .top-section .txtDiv #line {
+    border-bottom: 7px solid #425BAB;
+    width: 150px;
+    margin-right: 2rem;
+    bottom: 0.5rem;
+  }
+  .landing .top-section .txtDiv #platform {
+    padding-right: 0.6rem;
+  }
+  .landing .top-section .imgDiv img {
+    margin: 1rem 0 0 -6rem;
+    height: 260px;
+  }
+  .landing .lower-section {
+    margin-top: 8rem;
+  }
+  .landing .lower-section p {
+    font-size: 1rem;
+  }
+  .landing .lower-section #center {
+    border-left: 1px solid #293241;
+    border-right: 1px solid #293241;
+    padding: 1rem 50px;
+  }
+  .landing #sustainability {
+    top: 18rem;
+    left: -1rem;
+    font-size: 8.5rem;
+  }
+  .toDV {
+    min-height: 280px;
+    padding: 8rem 0;
+  }
+  .toDV .innerContainer {
+    width: 80vw;
+  }
+  .toDV .innerContainer p {
+    font-size: 1.4rem;
+    margin-bottom: 1.1rem;
+  }
+  .toDV .innerContainer h3 {
+    font-size: 2.4rem;
+    margin-bottom: 0.2rem;
+  }
+  .toDV .innerContainer #toDv {
+    margin-top: 3rem;
+  }
+  .model .inner-section {
+    gap: 2rem;
+    padding: 5rem 0;
+    justify-content: space-between;
+  }
+  .model .inner-section .leftDiv {
+    width: 60vw;
+  }
+  .model .inner-section .leftDiv p {
+    font-size: 1.4rem;
+  }
+  .model .inner-section .leftDiv p span {
+    font-size: 2rem;
+  }
+  .model .inner-section .rightDiv img {
+    height: 150px;
+  }
+  .doSection .inner-section {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 6rem 0;
+  }
+  .doSection .inner-section h4 {
+    font-size: 3rem;
+    line-height: 3.8rem;
+  }
+  .doSection .inner-section #line {
+    border-bottom: 5px solid #425BAB;
+    width: 150px;
+    margin-right: 0.3rem;
+    bottom: 0.2rem;
+  }
+  .doSection .inner-section .section1 {
+    margin-top: 2rem;
+    gap: 3rem;
+  }
+  .doSection .inner-section .section1 .text p {
+    font-size: 1.2rem;
+  }
+  .doSection .inner-section .section1 .image {
+    margin-top: 1.6rem;
+  }
+  .doSection .inner-section .section1 .image #img1 {
+    height: 167px;
+    width: 340px;
+  }
+  .doSection .inner-section .section1 .image #img2 {
+    height: 187px;
+    width: 360px;
+    top: 7.3rem;
+    left: -10rem;
+  }
+  .doSection .inner-section .section2 {
+    margin-top: 15rem;
+    gap: 3rem;
+  }
+  .doSection .inner-section .section2 .image #img1 {
+    height: 187px;
+    width: 360px;
+  }
+  .doSection .inner-section .section2 .image #img2 {
+    height: 173px;
+    width: 340px;
+    top: 6.8rem;
+    right: -10rem;
+  }
+  .doSection .inner-section .section2 .text p {
+    font-size: 1.2rem;
+  }
+  .doSection .inner-section .lowerText {
+    margin-left: 180px;
+    margin-top: 8rem;
+    font-size: 1.2rem;
+  }
+  .toTeams {
+    padding: 8rem 0;
+  }
+  .toTeams .inner-section h4 {
+    font-size: 2.3rem;
+    line-height: 3rem;
+  }
+  .toTeams .inner-section #lowerH4 {
+    padding-left: 3rem;
+    margin-bottom: 0.6rem;
+  }
+  .toTeams .inner-section .team {
+    gap: 0.8rem;
+  }
+  .toTeams .inner-section .team .icon span {
+    width: 25px;
+  }
+  .toTeams .inner-section .team .text {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+  .toTeams .inner-section #toTeams {
+    margin-top: 3rem;
+  }
+  .takes {
+    padding: 5rem 0;
+  }
+  .takes .inner-section h4 {
+    font-size: 3rem;
+    line-height: 3.8rem;
+  }
+  .takes .inner-section #line {
+    border-bottom: 5px solid #425BAB;
+    width: 150px;
+    margin-right: 0.5rem;
+    bottom: 0.2rem;
+  }
+  .takes .inner-section .upper-part, .takes .inner-section .lower-part {
+    margin-top: 3rem;
+  }
+  .takes .inner-section .upper-part .box img, .takes .inner-section .lower-part .box img {
+    height: 225px;
+  }
+  .takes .inner-section .upper-part .box p, .takes .inner-section .lower-part .box p {
+    font-size: 1.04rem;
+  }
+  .we-are {
+    padding: 5rem 0;
+  }
+  .we-are .inner-section {
+    gap: 2rem;
+  }
+  .we-are .inner-section .leftDiv p {
+    font-size: 5.6rem;
+  }
+  .we-are .inner-section .rightDiv p {
+    font-size: 2.4rem;
+    margin-bottom: 1.6rem;
+  }
+  .we-are #joinBtn {
+    width: 272px;
+    margin-top: 6rem;
+  }
+  footer {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+  }
+  footer .inner-section {
+    width: 85vw;
+  }
+  footer .inner-section .div h6 {
+    font-size: 1.1rem;
+    margin-bottom: 0.1rem;
+  }
+  footer .inner-section .div a, footer .inner-section .div p {
+    font-size: 0.9rem;
+  }
+  footer .inner-section .div .socials i {
+    font-size: 1rem;
+  }
+  .veges .vLanding {
+    padding: 6rem 0 8rem 10vw;
+  }
+  .veges .vLanding .inner-section {
+    gap: 2rem;
+    width: 90vw;
+  }
+  .veges .vLanding .inner-section .leftDiv img {
+    height: 280px;
+  }
+  .veges .vLanding .inner-section .rightDiv h2 {
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+  }
+  .veges .vLanding .inner-section .rightDiv h2 #line {
+    border-bottom: 5px solid #293241;
+    width: 60px;
+  }
+  .veges .vLanding .inner-section .rightDiv #topH2 {
+    margin-left: -18.4rem;
+  }
+  .veges .buy {
+    height: 440px;
+    padding-left: 0vw;
+  }
+  .veges .buy .inner-section p {
+    font-size: 1.8rem;
+    color: #BA7411;
+    margin-bottom: 1.2rem;
+  }
+  .veges .buy .inner-section h5 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .veges .buy .inner-section #buyBtn {
+    font-size: 1.3rem;
+  }
+  .veges .objectives {
+    padding: 6rem 0 6rem 0;
+  }
+  .veges .objectives .inner-section {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .veges .objectives .inner-section .part1 {
+    margin-bottom: 5rem;
+  }
+  .veges .objectives .inner-section .part1 h3 {
+    font-size: 1.3rem;
+  }
+  .veges .objectives .inner-section .part1 p {
+    font-size: 1.3rem;
+  }
+  .veges .objectives .inner-section .part2 {
+    margin-bottom: 10rem;
+  }
+  .veges .objectives .inner-section .part2 .leftDiv {
+    width: 400px;
+    margin-top: 12rem;
+  }
+  .veges .objectives .inner-section .part2 .leftDiv h5 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  .veges .objectives .inner-section .part2 .leftDiv p {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  .veges .objectives .inner-section .part2 .rightDiv img {
+    width: 280px;
+  }
+  .veges .objectives .inner-section .part3 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .veges .objectives .inner-section .part3 .leftDiv img {
+    width: 276px;
+    height: 459px;
+  }
+  .veges .objectives .inner-section .part3 .rightDiv {
+    width: 484px;
+  }
+  .veges .objectives .inner-section .part3 .rightDiv h5 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  .veges .objectives .inner-section .part3 .rightDiv p {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  .veges .faqs {
+    padding: 6rem 0 6rem 0vw;
+  }
+  .veges .faqs .container {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .veges .faqs .container h5 {
+    font-size: 2rem;
+  }
+  .veges .faqs .container #lowerH5 {
+    padding-left: 1.2rem;
+  }
+  .veges footer {
+    padding-top: 3rem;
+  }
+  .teams .tLanding {
+    padding: 10rem 0 6rem 0;
+  }
+  .teams .tLanding .container {
+    width: 90vw;
+  }
+  .teams .tLanding .container .card {
+    transform: scale(0.85);
+  }
+  .teams .tLanding .container .upperDiv {
+    margin-bottom: 4rem;
+  }
+  .teams .tLanding .container .upperDiv .centerDiv h2 {
+    font-size: 3rem;
+  }
+  .teams .tLanding .container .upperDiv .centerDiv #joinBtn {
+    width: 219px;
+    margin-top: 3.5rem;
+  }
+  .teams .tLanding .container .lowerDiv {
+    width: 56vw;
+    padding-right: 4vw;
+  }
+  .teams .teamsSection {
+    padding: 6rem 0 0rem 0;
+  }
+  .teams .teamsSection .team {
+    margin-bottom: 6rem;
+  }
+  .teams .teamsSection .team h4 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
+  .teams .teamsSection .team .cards-container {
+    width: 83vw;
+    max-width: 990px;
+    gap: 20px;
+    padding-left: 1.5vw;
+  }
+  .teams .teamsSection .team .cards-container .card {
+    transform: scale(0.85);
+  }
+  .teams footer {
+    padding-top: 3rem;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1400px) {
+  .btn {
+    font-size: 1.2rem;
+  }
+  .landing #sustainability {
+    font-size: 12rem;
+  }
+  .toTeams {
+    padding: 8rem 0;
+  }
+  .toTeams .inner-section {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .toTeams .inner-section h4 {
+    font-size: 2.5rem;
+    line-height: 3.4rem;
+  }
+  .toTeams .inner-section #lowerH4 {
+    padding-left: 3rem;
+  }
+  .toTeams .inner-section .team .text {
+    font-size: 2.3rem;
+    line-height: 4rem;
+  }
+  .we-are #joinBtn {
+    width: 285px;
+    margin-top: 6rem;
+  }
+  .toDV {
+    position: relative;
+    min-height: 434px;
+    padding: 8rem 0;
+  }
+  .toDV .innerContainer p {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+  }
+  .toDV .innerContainer h3 {
+    font-size: 2.8rem;
+  }
+  .doSection .inner-section {
+    padding: 8rem 0;
+  }
+  .doSection .inner-section h4 {
+    font-size: 3.6rem;
+    line-height: 4.2rem;
+  }
+  .doSection .inner-section #line {
+    border-bottom: 5px solid #425BAB;
+    width: 170px;
+  }
+  .doSection .inner-section .section1 {
+    gap: 6rem;
+  }
+  .doSection .inner-section .section1 .text p {
+    font-size: 1.4rem;
+  }
+  .doSection .inner-section .section2 {
+    gap: 6rem;
+  }
+  .doSection .inner-section .section2 .text p {
+    font-size: 1.4rem;
+  }
+  .doSection .inner-section .section2 .text p span {
+    color: #425BAB;
+  }
+  .doSection .inner-section .lowerText {
+    font-size: 1.4rem;
+  }
+  .we-are .inner-section .leftDiv p {
+    font-size: 8.8rem;
+  }
+  .we-are .inner-section .rightDiv p {
+    font-size: 3.2rem;
+  }
+  .veges .vLanding .inner-section {
+    width: 80vw;
+  }
+  .veges .vLanding .inner-section .leftDiv img {
+    height: 320px;
+  }
+  .veges .vLanding .inner-section .rightDiv {
+    margin-top: 4rem;
+  }
+  .veges .vLanding .inner-section .rightDiv h2 {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+  .veges .buy {
+    height: 500px;
+    padding-left: 10vw;
+  }
+  .veges .buy .inner-section p {
+    font-size: 1.8rem;
+    color: #BA7411;
+    margin-bottom: 1.2rem;
+  }
+  .veges .buy .inner-section h5 {
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+  }
+  .veges .buy .inner-section #buyBtn {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+  }
+  .veges .objectives .inner-section .part1 {
+    margin-bottom: 6rem;
+  }
+  .veges .objectives .inner-section .part1 h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #425BAB;
+    font-size: 1.5rem;
+  }
+  .veges .objectives .inner-section .part1 p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #293241;
+  }
+  .veges .objectives .inner-section .part2 {
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .veges .objectives .inner-section .part2 .leftDiv {
+    width: 500px;
+    margin-top: 12rem;
+  }
+  .veges .objectives .inner-section .part2 .leftDiv h5 {
+    font-size: 1.9rem;
+    margin-bottom: 0.5rem;
+  }
+  .veges .objectives .inner-section .part2 .leftDiv p {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .veges .objectives .inner-section .part2 .rightDiv img {
+    width: 307px;
+  }
+  .veges .objectives .inner-section .part3 .leftDiv img {
+    width: 356px;
+    height: 559px;
+  }
+  .veges .objectives .inner-section .part3 .rightDiv {
+    width: 500px;
+    margin-top: 3rem;
+  }
+  .veges .objectives .inner-section .part3 .rightDiv h5 {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+  }
+  .veges .objectives .inner-section .part3 .rightDiv p {
+    font-size: 1.5rem;
+  }
+  .teams .teamsSection .team .cards-container {
+    width: 80vw;
+  }
+}
+@media (min-width: 600px) and (max-width: 999px) {
+  header {
+    padding-top: 0;
+  }
+  header .nav-container {
+    padding-left: 1.4rem;
+    padding-right: 0rem;
+  }
+  header .nav-container nav {
+    width: auto;
+    margin-left: 0px;
+  }
+  header .nav-container nav ul li a {
+    font-size: 1rem;
+  }
+  .btn {
+    padding: 1.2rem 3.6rem;
+    font-size: 1.2rem;
+  }
+  .landing {
+    padding: 5rem 0 3rem 0;
+    min-height: 60vh;
+  }
+  .landing .top-section {
+    width: 615px;
+  }
+  .landing .top-section .txtDiv h2 {
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+  }
+  .landing .top-section .txtDiv #line {
+    border-bottom: 5px solid #425BAB;
+    width: 120px;
+    margin-right: 1.2rem;
+    bottom: 0.5rem;
+  }
+  .landing .top-section .txtDiv #platform {
+    padding-right: 0.6rem;
+  }
+  .landing .top-section .imgDiv img {
+    margin: 1rem 0 0 -6rem;
+    height: 220px;
+  }
+  .landing .lower-section {
+    width: 90vw;
+    margin-top: 6rem;
+  }
+  .landing .lower-section p {
+    width: 300px;
+    font-size: 1rem;
+    padding: 1rem 0.5rem;
+  }
+  .landing .lower-section #center {
+    width: 300px;
+    padding: 1rem 0.5rem;
+  }
+  .landing #sustainability {
+    top: 16rem;
+    left: -1rem;
+    font-size: 6.5rem;
+  }
+  .toDV {
+    min-height: 280px;
+    padding: 5rem 0;
+  }
+  .toDV .innerContainer {
+    width: 80vw;
+  }
+  .toDV .innerContainer p {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+  .toDV .innerContainer h3 {
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+  }
+  .toDV .innerContainer #toDv {
+    margin-top: 3rem;
+    font-size: 1rem;
+  }
+  .model .inner-section {
+    gap: 1.2rem;
+    padding: 4rem 0;
+  }
+  .model .inner-section .leftDiv {
+    width: 60vw;
+  }
+  .model .inner-section .leftDiv p {
+    font-size: 1.2rem;
+  }
+  .model .inner-section .leftDiv p span {
+    font-size: 1.4rem;
+  }
+  .model .inner-section .rightDiv img {
+    height: 150px;
+  }
+  .doSection .inner-section {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 6rem 0;
+  }
+  .doSection .inner-section h4 {
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+  }
+  .doSection .inner-section #line {
+    border-bottom: 5px solid #425BAB;
+    width: 150px;
+    margin-right: 0.3rem;
+    bottom: 0.2rem;
+  }
+  .doSection .inner-section .section1 {
+    margin-top: 2rem;
+    gap: 3rem;
+  }
+  .doSection .inner-section .section1 .text p {
+    font-size: 1.1rem;
+  }
+  .doSection .inner-section .section1 .image {
+    margin-top: 1.6rem;
+  }
+  .doSection .inner-section .section1 .image #img1 {
+    height: 147px;
+    width: 320px;
+  }
+  .doSection .inner-section .section1 .image #img2 {
+    height: 167px;
+    width: 340px;
+    top: 6.5rem;
+    left: -10rem;
+  }
+  .doSection .inner-section .section2 {
+    margin-top: 15rem;
+    gap: 3rem;
+  }
+  .doSection .inner-section .section2 .image #img1 {
+    height: 167px;
+    width: 340px;
+  }
+  .doSection .inner-section .section2 .image #img2 {
+    height: 153px;
+    width: 320px;
+    top: 6.5rem;
+    right: -9rem;
+  }
+  .doSection .inner-section .section2 .text p {
+    font-size: 1.2rem;
+  }
+  .doSection .inner-section .lowerText {
+    margin-left: 180px;
+    margin-top: 8rem;
+    font-size: 1.2rem;
+  }
+  .toTeams {
+    padding: 6rem 0;
+  }
+  .toTeams .inner-section h4 {
+    font-size: 2rem;
+    line-height: 2.7rem;
+  }
+  .toTeams .inner-section #lowerH4 {
+    padding-left: 3rem;
+    margin-bottom: 0.6rem;
+  }
+  .toTeams .inner-section .team {
+    gap: 0.8rem;
+  }
+  .toTeams .inner-section .team .icon span {
+    width: 25px;
+  }
+  .toTeams .inner-section .team .text {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+  .toTeams .inner-section #toTeams {
+    margin-top: 3rem;
+  }
+  .takes {
+    padding: 5rem 0;
+  }
+  .takes .inner-section h4 {
+    font-size: 3rem;
+    line-height: 3.8rem;
+  }
+  .takes .inner-section #line {
+    border-bottom: 5px solid #425BAB;
+    width: 150px;
+    margin-right: 0.5rem;
+    bottom: 0.2rem;
+  }
+  .takes .inner-section .upper-part, .takes .inner-section .lower-part {
+    margin-top: 4rem;
+  }
+  .takes .inner-section .upper-part .box img, .takes .inner-section .lower-part .box img {
+    height: 225px;
+  }
+  .takes .inner-section .upper-part .box p, .takes .inner-section .lower-part .box p {
+    font-size: 1.04rem;
+  }
+  .takes .inner-section .upper-part #box3, .takes .inner-section .lower-part #box3 {
+    display: none;
+  }
+  .we-are {
+    padding: 5rem 0;
+  }
+  .we-are .inner-section {
+    gap: 2rem;
+  }
+  .we-are .inner-section .leftDiv p {
+    font-size: 3.5rem;
+  }
+  .we-are .inner-section .rightDiv p {
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+  }
+  .we-are #joinBtn {
+    width: 272px;
+    margin-top: 6rem;
+  }
+  footer {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+  }
+  footer .inner-section {
+    width: 85vw;
+  }
+  footer .inner-section .div h6 {
+    font-size: 1.1rem;
+    margin-bottom: 0.1rem;
+  }
+  footer .inner-section .div a, footer .inner-section .div p {
+    font-size: 0.9rem;
+  }
+  footer .inner-section .div .socials i {
+    font-size: 1rem;
+  }
+  .veges .vLanding {
+    padding: 6rem 0 8rem 10vw;
+  }
+  .veges .vLanding .inner-section {
+    gap: 1rem;
+    width: 90vw;
+  }
+  .veges .vLanding .inner-section .leftDiv img {
+    height: 230px;
+  }
+  .veges .vLanding .inner-section .rightDiv h2 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+  .veges .vLanding .inner-section .rightDiv h2 #line {
+    border-bottom: 5px solid #293241;
+    width: 30px;
+  }
+  .veges .vLanding .inner-section .rightDiv #topH2 {
+    margin-left: -14rem;
+  }
+  .veges .buy {
+    height: 380px;
+    padding-left: 0vw;
+  }
+  .veges .buy .inner-section p {
+    font-size: 1.2rem;
+    color: #BA7411;
+    margin-bottom: 1.2rem;
+  }
+  .veges .buy .inner-section h5 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+  .veges .buy .inner-section #buyBtn {
+    font-size: 1rem;
+  }
+  .veges .objectives {
+    padding: 6rem 0 6rem 0;
+  }
+  .veges .objectives .inner-section {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .veges .objectives .inner-section .part1 {
+    margin-bottom: 5rem;
+  }
+  .veges .objectives .inner-section .part1 h3 {
+    font-size: 1.3rem;
+  }
+  .veges .objectives .inner-section .part1 p {
+    font-size: 1.3rem;
+  }
+  .veges .objectives .inner-section .part2 {
+    margin-bottom: 8rem;
+  }
+  .veges .objectives .inner-section .part2 .leftDiv {
+    width: 340px;
+    margin-top: 12rem;
+  }
+  .veges .objectives .inner-section .part2 .leftDiv h5 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  .veges .objectives .inner-section .part2 .leftDiv p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  .veges .objectives .inner-section .part2 .rightDiv img {
+    width: 260px;
+  }
+  .veges .objectives .inner-section .part3 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .veges .objectives .inner-section .part3 .leftDiv img {
+    width: 236px;
+    height: 419px;
+  }
+  .veges .objectives .inner-section .part3 .rightDiv {
+    width: 330px;
+  }
+  .veges .objectives .inner-section .part3 .rightDiv h5 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  .veges .objectives .inner-section .part3 .rightDiv p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  .veges .faqs {
+    padding: 6rem 0 6rem 0vw;
+  }
+  .veges .faqs .container {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .veges .faqs .container h5 {
+    font-size: 2.4rem;
+  }
+  .veges .faqs .container #lowerH5 {
+    padding-left: 1.2rem;
+  }
+  .veges footer {
+    padding-top: 3rem;
+  }
+  .teams .tLanding {
+    padding: 10rem 0 4rem 0;
+  }
+  .teams .tLanding .container {
+    width: 98vw;
+  }
+  .teams .tLanding .container .card {
+    transform: scale(0.8);
+  }
+  .teams .tLanding .container .upperDiv {
+    margin-bottom: 3rem;
+  }
+  .teams .tLanding .container .upperDiv .centerDiv h2 {
+    font-size: 2.5rem;
+  }
+  .teams .tLanding .container .upperDiv .centerDiv #joinBtn {
+    width: 204px;
+    font-size: 1rem;
+    margin-top: 3.5rem;
+  }
+  .teams .tLanding .container .lowerDiv {
+    width: 56vw;
+    padding-right: 4vw;
+  }
+  .teams .teamsSection {
+    padding: 6rem 0 0rem 0;
+  }
+  .teams .teamsSection .team {
+    margin-bottom: 6rem;
+  }
+  .teams .teamsSection .team h4 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
+  .teams .teamsSection .team .cards-container {
+    width: 82vw;
+    gap: auto;
+  }
+  .teams footer {
+    padding-top: 3rem;
+  }
+}
+.soon {
+  background: linear-gradient(0deg, rgba(253, 251, 248, 0.92), rgba(253, 251, 248, 0.92)), url(../images/team.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.soon .soonText {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 700px) {
+  .soon .soonText {
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+  }
+}/*# sourceMappingURL=styles.css.map */

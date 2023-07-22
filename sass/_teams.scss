@@ -1,0 +1,177 @@
+.teams{
+
+    header{
+        background: #E5E8F2;
+    }
+
+    .tLanding{
+        padding: 12rem 0;
+        background: #E5E8F2;
+
+        .container{
+            width: 80vw;
+            margin: 0 auto;
+
+            .card{
+                text-align: center;
+
+                .imageDiv{
+                    width: 162px;
+                    height: 162px;
+                    margin: 0 auto;
+                    border-radius: 50%;
+                    overflow: hidden;
+                   // border: 4px solid $browny2;
+                    margin-bottom: 1rem;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                }
+
+                h6{
+                    font-family: $mont;
+                    font-weight: 500;
+                    font-size: 1.25rem;
+                    margin-bottom: .4rem;
+                    color: $blue1;
+                }
+                p{
+                    font-family: $pop;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    margin-bottom: .2rem;
+                }
+                span{
+                    display: inline-block;
+                    font-family: $mont;
+                    font-weight: 500;
+                    font-size: 1rem;
+                }
+            }
+
+            .upperDiv{
+                margin-bottom: 6rem;
+                display: flex;
+                justify-content: space-between;
+
+                .centerDiv{
+                    margin-top: -5rem;
+                    h2{
+                        font-family: $pop;
+                        font-weight: 600;
+                        font-size: 3.815rem;
+                    }
+
+                    #joinBtn{
+                        border-radius: 67px;
+                        background: $blue1;
+                        display: block;
+                        width: 260px;
+                        margin: 0 auto;
+                        margin-top: 3.5rem;
+                    }
+                }
+            }
+
+            .lowerDiv{
+                display: flex;
+                justify-content: space-between;
+                width: 42vw;
+                margin: 0 auto;
+                padding-right: 2vw;
+            }
+        }
+    }
+
+    .teamsSection{
+        background: rgba(186, 116, 17, 0.03);
+        padding: 12rem 0 4rem 0;
+
+        .team{
+            margin-bottom: 8rem;
+
+            h4{
+                font-family: $mont;
+                font-weight: 600;
+                font-size: 3.052rem;
+                text-align: center;
+                color: $browny2;
+                margin-bottom: 3rem;
+            }
+
+            .cards-container{
+                width: 70vw;
+                max-width: 990px;
+                margin: 0 auto;
+                display: flex;
+                gap: 103px;
+                flex-wrap: wrap;
+
+                .card{
+                    background: #EEEDE0;
+                    text-align: center;
+                    width: 260px;
+                    height: 350px;
+                    display: flex; 
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    transition: .5s ease;
+                    cursor: pointer;
+
+                    &:hover{
+                        transform: scale(1.06);
+                    }
+
+                    .imageDiv{
+                        width: 160.81px;
+                        height: 160.81px;
+                        border-radius: 50%;
+                        margin: 0 auto;
+                        overflow: hidden;
+                       // margin-top: -1rem;
+
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 50%;
+                        }
+
+                    }
+                    p{
+                        font-family: $mont;
+                        font-weight: 500;
+                        color: $black;
+                        margin-bottom: .8rem;
+                    }
+
+                    .name{
+                        text-transform: uppercase;
+                        margin-top: 1rem;
+                    }
+
+                    .uni{
+                        color: $browny2;
+                    }
+
+                    .title{
+                        font-style: italic;
+                    }
+                }
+            }
+
+            .blue1{
+                color: $blue1;
+            }
+        }
+    }
+
+    footer{
+        padding-top: 4rem;
+    }
+}

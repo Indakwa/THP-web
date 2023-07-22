@@ -1,0 +1,237 @@
+.veges{
+
+    header{
+        background: #E5E8F2;
+    }
+
+    .vLanding{
+        padding: 6rem 0 8rem 10vw;
+        //max-height: 100vh;
+        background: #E5E8F2;
+
+        .inner-section{
+            position: relative;
+            display: flex;
+            gap: 2rem;
+            width: 80vw;
+            margin: 0 auto;
+
+            .leftDiv{
+                img{
+                    height: 360px;
+                }
+            }
+    
+            .rightDiv{
+                margin-top: 4rem;
+
+                h2{
+                    position: relative;
+                    font-family: $pop;
+                    font-weight: 700;
+                    font-size: 3.815rem;
+                    color: $black;
+                    line-height: 5.6rem;
+        
+                    span{
+                        color: $browny2;
+                    }
+    
+                    #line{
+                        position: relative;
+                        display: inline-block;
+                        border-bottom: 5px solid $black;
+                        width: 77px;
+                        margin-right: .6rem;
+                        bottom: .2rem;
+                    }   
+                }
+    
+                #topH2{
+                    margin-left: -23.6rem;
+                    background: #E5E8F2;
+                    padding: .5rem 1.2rem;
+                }
+            }
+        }
+    }
+
+    .buy{
+        background: linear-gradient(0deg, rgba(229, 232, 242, 0.8), rgba(229, 232, 242, 0.9)), url(../images/eb1.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10vw;
+        
+        .inner-section{
+            width: 80vw;
+            margin: 0 auto;
+
+            #up{
+                font-family: $mont;
+                font-weight: 700;
+                font-size: 2.3rem;
+                color: $browny2;
+                margin-bottom: 1.5rem;
+            }
+
+            #bottom{
+                font-family: $mont;
+                font-weight: 500;
+                line-height: 2.5rem;
+                font-size: 1.6rem;
+                margin-bottom: 0rem;
+                height: auto;
+            }
+
+            #buyBtn{
+                background: $black;
+                font-family: $pop;
+                font-weight: 400;
+                font-size: 1.563rem;
+            }
+        }
+    }
+
+    .objectives{
+        background: #EEEDE0;
+        padding: 8rem 0 8rem 0;
+        .inner-section{
+            width: 70vw;
+            margin: 0 auto;
+
+            .part1{
+                margin-bottom: 3rem;
+
+                h3{
+                    font-family: $pop;
+                    font-weight: 600;
+                    color: $blue1;
+                    font-size: 1.953rem;
+                }
+
+                p{
+                    font-family: $mont;
+                    font-weight: 400;
+                    font-size: 1.953rem;
+                    color: $black;
+                }
+            }
+
+            .part2{
+                margin-bottom: 15rem;
+                display: flex;
+                justify-content: space-between;
+
+                .leftDiv{
+                    width: 600px;
+                    margin-top: 8rem;
+
+                    h5{
+                        font-family: $pop;
+                        font-weight: 600;
+                        color: $browny2;
+                        font-size: 1.953rem;
+                        margin-bottom: 1.2rem;
+                    }
+                    p{
+                        font-family: $mont;
+                        font-weight: 400;
+                        color: $black;
+                        font-size: 1.953rem;
+                        margin-bottom: 2rem;
+                    }
+                }
+
+                .rightDiv{
+                    width: 307px;
+                    height: 430px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .part3{
+                display: flex;
+                justify-content: space-between;
+
+                .leftDiv{
+                    width: 366px;
+                    height: 549px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: 30%;
+                    }
+                } 
+
+                .rightDiv{
+                    width: 584px;
+                    margin-top: 3rem;
+
+                    h5{
+                        font-family: $pop;
+                        font-weight: 600;
+                        color: $browny2;
+                        font-size: 1.953rem;
+                        margin-bottom: 1rem;
+                    }
+                    p{
+                        font-family: $mont;
+                        font-weight: 400;
+                        color: $black;
+                        font-size: 1.563rem;
+                        margin-bottom: 2rem;
+
+                        span{
+                            color: $blue1;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .faqs{
+        background: linear-gradient(0deg, rgba(238, 237, 224, 0.9), rgba(238, 237, 224, 0.9)), url(../images/eb1.jpeg);       
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 8rem 0 8rem 10vw;
+
+        .container{
+            width: 80vw;
+            margin: 0 auto;
+    
+            h5{
+                font-family: $pop;
+                font-weight: 500;
+                font-style: italic;
+                font-size: 3.052rem;
+                color: $browny2;
+            }
+
+            #lowerH5{
+                padding-left: 2rem;
+            }
+
+            @import 'accordion';
+        }
+
+
+    }
+
+    footer{
+        padding-top: 4rem;
+    }
+
+}

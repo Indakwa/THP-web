@@ -1,0 +1,568 @@
+@media (min-width: 600px) and (max-width: 999px){
+    
+    header{
+        padding-top: 0;
+    
+        .nav-container {
+            padding-left: 1.4rem;
+            padding-right: 0rem;      
+        }
+    
+    
+        .nav-container{
+            
+            nav{
+                width: auto;
+                margin-left: -0px;
+        
+        
+                ul{
+                    li{
+
+                        a{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .btn{
+        padding: 1.2rem 3.6rem;
+        font-size: 1.2rem;
+    }
+
+    .landing{
+        padding: 5rem 0 3rem 0;
+        min-height: 60vh;
+    
+        .top-section{
+            width: 615px;
+    
+            .txtDiv{
+    
+                h2{
+                    font-size: 2.8rem;
+                    line-height: 3.8rem;
+                }
+
+                #line{
+                    border-bottom: 5px solid $primary;
+                    width: 120px;
+                    margin-right: 1.2rem;
+                    bottom: .5rem;
+                }
+    
+                #platform{
+                    padding-right: .6rem;
+                }
+    
+                
+            }
+    
+            .imgDiv{
+                img{
+                    margin: 1rem 0 0 -6rem;
+                    height: 220px;
+                }
+            }
+        }
+    
+        .lower-section{
+            width: 90vw;
+            margin-top: 6rem;
+    
+            p{
+                width: 300px;
+                font-size: 1rem;
+                padding: 1rem .5rem;
+            }
+    
+            #center{
+                width: 300px;
+                padding: 1rem .5rem;
+            }
+        }
+    
+        #sustainability{
+            top: 16rem;
+            left: -1rem;
+            font-size: 6.5rem;
+        }
+    }
+    
+    .toDV{
+        min-height: 280px;
+        padding: 5rem 0;
+    
+        .innerContainer{
+            width: 80vw;
+    
+            p{
+                font-size: 1.1rem;
+                margin-bottom: .8rem;
+            }
+    
+            h3{
+                font-size: 2rem;
+                margin-bottom: .2rem;
+            }
+    
+            #toDv{
+                margin-top: 3rem;
+                font-size: 1rem;
+            }
+    
+        }
+    }
+    
+    .model{
+    
+        .inner-section{
+            gap: 1.2rem;
+            padding: 4rem 0;
+    
+            .leftDiv{
+                width: 60vw;
+                p{
+                    span{
+                        font-size: 1.4rem;
+                    }
+    
+                    font-size: 1.2rem;
+                }
+            }
+    
+            .rightDiv{
+                img{
+                    height: 150px;
+                }
+            }
+        }
+    }
+    
+    .doSection{
+    
+        .inner-section{
+            width: 90vw;
+            margin: 0 auto;
+            padding: 6rem 0;
+    
+            h4{
+                font-size: 2.8rem;
+                line-height: 3.4rem;
+            }
+        
+            #line{
+                border-bottom: 5px solid $primary;
+                width: 150px;
+                margin-right: .3rem;
+                bottom: .2rem;
+            }
+    
+            .section1{
+                margin-top: 2rem;
+                gap: 3rem;
+    
+                .text{
+    
+                    p{
+                        font-size: 1.1rem;
+                    }
+                }
+                .image{
+                    margin-top: 1.6rem;
+                    
+                    #img1{
+                        height: 147px;
+                        width: 320px;
+                    }
+    
+                    #img2{
+                        height: 167px;
+                        width: 340px;
+                        top: 6.5rem;
+                        left: -10rem;
+                    }
+                }
+            }
+    
+            .section2{
+                margin-top: 15rem;
+                gap: 3rem;
+    
+                .image{
+                    
+                    #img1{
+                        height: 167px;
+                        width: 340px;
+                    }
+    
+                    #img2{
+                        height: 153px;
+                        width: 320px;
+                        top: 6.5rem;
+                        right: -9rem;
+                    }
+                }
+    
+                .text{
+    
+                    p{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+    
+            .lowerText{
+                margin-left: 180px;
+                margin-top: 8rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    
+    .toTeams{
+        padding: 6rem 0;
+    
+        .inner-section{
+    
+            h4{
+                font-size: 2rem;
+                line-height: 2.7rem;
+            }
+            #lowerH4{
+                padding-left: 3rem;
+                margin-bottom: .6rem;
+            }
+    
+            .team{
+                gap: .8rem;
+    
+                .icon{
+    
+                    span{
+                        width: 25px;
+                    }
+                }
+    
+                .text{
+                    font-size: 1.8rem;
+                    line-height: 3rem;
+                }
+            }
+    
+            #toTeams{
+                margin-top: 3rem;
+            }
+        }
+    }
+    
+    .takes{
+        padding: 5rem 0;
+    
+        .inner-section{
+    
+            h4{
+                font-size: 3rem;
+                line-height: 3.8rem;
+            }
+        
+            #line{
+                border-bottom: 5px solid $primary;
+                width: 150px;
+                margin-right: .5rem;
+                bottom: .2rem;
+            }
+    
+            .upper-part, .lower-part{
+                margin-top: 4rem;
+    
+                .box{
+                    img{
+                        height: 225px;
+                    }
+                    p{
+                        font-size: 1.04rem;
+                    }
+                }
+
+                #box3{
+                    display: none;
+                }
+            }
+        }
+    }
+    
+    .we-are{
+        padding: 5rem 0;
+    
+        .inner-section{
+            gap: 2rem;
+    
+            .leftDiv{
+                
+                p{
+                    font-size: 3.5rem;
+                }
+            }
+    
+            .rightDiv{
+                p{
+                    font-size: 2rem;
+                    margin-bottom: 1.6rem;
+                }
+    
+            }
+        }
+    
+        #joinBtn{
+            width: 272px;
+            margin-top: 6rem;
+        }
+    }
+    
+
+    footer{
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+         
+        .inner-section{
+            width: 85vw;
+    
+            .div{
+                h6{
+                    font-size: 1.1rem;
+                    margin-bottom: .1rem;
+                }
+    
+                a, p{
+                    font-size: .9rem;
+                }
+    
+                .socials{
+    
+                    i{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .veges{
+    
+        .vLanding{
+            padding: 6rem 0 8rem 10vw;
+    
+            .inner-section{
+                gap: 1rem;
+                width: 90vw;
+    
+                .leftDiv{
+                    img{
+                        height: 230px;
+                    }
+                }
+        
+                .rightDiv{
+    
+                    h2{
+                        font-size: 2rem;
+                        line-height: 2.8rem;
+        
+                        #line{
+                            border-bottom: 5px solid $black;
+                            width: 30px;
+                        }   
+                    }
+        
+                    #topH2{
+                        margin-left: -14rem;
+                    }
+                }
+            }
+        }
+    
+        .buy{
+            height: 380px;
+            padding-left: 0vw;
+            
+            .inner-section{
+    
+                p{
+                    font-size: 1.2rem;
+                    color: $browny2;
+                    margin-bottom: 1.2rem;
+                }
+    
+                h5{
+                    font-size: 2rem;
+                    margin-bottom: 3rem;
+                }
+    
+                #buyBtn{
+                    font-size: 1rem;
+                }
+            }
+        }
+    
+        .objectives{
+            padding: 6rem 0 6rem 0;
+            .inner-section{
+                width: 80vw;
+                margin: 0 auto;
+    
+                .part1{
+                    margin-bottom: 5rem;
+    
+                    h3{
+                        font-size: 1.3rem;
+                    }
+    
+                    p{
+                        font-size: 1.3rem;
+                    }
+                }
+    
+                .part2{
+                    margin-bottom: 8rem;
+    
+                    .leftDiv{
+                        width: 340px;
+                        margin-top: 12rem;
+    
+                        h5{
+                            font-size: 1.3rem;
+                            margin-bottom: .5rem;
+                        }
+                        p{
+                            font-size: 1.1rem;
+                            margin-bottom: .5rem;
+                        }
+                    }
+    
+                    .rightDiv{
+                        img{
+                            width: 260px;
+                        }
+                    }
+                }
+    
+                .part3{
+                    display: flex;
+                    justify-content: space-between;
+    
+                    .leftDiv{
+                        img{
+                            width: 236px;
+                            height: 419px;
+                        }
+                    } 
+    
+                    .rightDiv{
+                        width: 330px;
+    
+                        h5{
+                            font-size: 1.3rem;
+                            margin-bottom: .5rem;
+                        }
+                        p{
+                            font-size: 1.1rem;
+                            margin-bottom: .5rem;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .faqs{
+            padding: 6rem 0 6rem 0vw;
+    
+            .container{
+                width: 80vw;
+                margin: 0 auto;
+        
+                h5{
+                    font-size: 2.4rem;
+                }
+    
+                #lowerH5{
+                    padding-left: 1.2rem;
+                }
+    
+            }
+    
+    
+        }
+    
+        footer{
+            padding-top: 3rem;
+        }
+    
+    }
+
+    .teams{
+
+        .tLanding{
+            padding: 10rem 0 4rem 0;
+
+            .container{
+                width: 98vw;
+    
+                .card{
+                    transform: scale(.8);
+                }
+    
+                .upperDiv{
+                    margin-bottom: 3rem;
+    
+                    .centerDiv{
+
+                        h2{
+                            font-size: 2.5rem;
+                        }
+    
+                        #joinBtn{
+                            width: 204px;
+                            font-size: 1rem;
+                            margin-top: 3.5rem;
+                        }
+                    }
+                }
+    
+                .lowerDiv{
+                    width: 56vw;
+                    padding-right: 4vw;
+                }
+            }
+        }
+    
+        .teamsSection{
+            padding: 6rem 0 0rem 0;
+    
+            .team{
+                margin-bottom: 6rem;
+    
+                h4{
+                    font-size: 2.4rem;
+                    margin-bottom: 2rem;
+                }
+    
+                .cards-container{
+                    width: 82vw;
+                    gap: auto;
+                }
+            }
+        }
+
+        footer{
+            padding-top: 3rem;
+        }
+    
+    }
+
+
+}
