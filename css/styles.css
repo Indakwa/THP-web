@@ -1404,15 +1404,17 @@ footer #copy {
     padding: 0.1rem 0.4rem;
   }
   .veges .buy {
-    height: 274px;
+    height: auto;
+    padding: 2rem 0;
     padding-left: 0vw;
   }
-  .veges .buy .inner-section p {
-    font-size: 0.9rem;
-    margin-bottom: 0.8rem;
+  .veges .buy .inner-section #up {
+    font-size: 1.4rem;
+    margin-bottom: 0.2rem;
   }
-  .veges .buy .inner-section h5 {
-    font-size: 1.5rem;
+  .veges .buy .inner-section #bottom {
+    font-size: 1rem;
+    line-height: 1.6rem;
     margin-bottom: 2rem;
   }
   .veges .buy .inner-section #buyBtn {
@@ -1450,14 +1452,15 @@ footer #copy {
     font-size: 1rem;
     margin-bottom: 0.5rem;
   }
-  .veges .objectives .inner-section .part2 .rightDiv img {
-    width: 70vw;
+  .veges .objectives .inner-section .part2 .rightDiv {
+    width: 100%;
+    height: auto;
   }
   .veges .objectives .inner-section .part3 {
     flex-direction: column;
   }
-  .veges .objectives .inner-section .part3 .leftDiv img {
-    width: 70vw;
+  .veges .objectives .inner-section .part3 .leftDiv {
+    width: 100%;
     height: auto;
   }
   .veges .objectives .inner-section .part3 .rightDiv {
