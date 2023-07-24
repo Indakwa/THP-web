@@ -1783,17 +1783,31 @@ footer #copy {
     height: 440px;
     padding-left: 0vw;
   }
-  .veges .buy .inner-section p {
+  .veges .buy .inner-section {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 4rem 0;
+  }
+  .veges .buy .inner-section #up {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
     font-size: 1.8rem;
     color: #BA7411;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
   }
-  .veges .buy .inner-section h5 {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+  .veges .buy .inner-section #bottom {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    line-height: 2rem;
+    font-size: 1.1rem;
+    margin-bottom: 0rem;
+    height: auto;
   }
   .veges .buy .inner-section #buyBtn {
-    font-size: 1.3rem;
+    background: #293241;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.563rem;
   }
   .veges .objectives {
     padding: 6rem 0 6rem 0;
@@ -1998,23 +2012,6 @@ footer #copy {
   .veges .vLanding .inner-section .rightDiv h2 {
     font-size: 3.2rem;
     line-height: 4.2rem;
-  }
-  .veges .buy {
-    height: 500px;
-    padding-left: 10vw;
-  }
-  .veges .buy .inner-section p {
-    font-size: 1.8rem;
-    color: #BA7411;
-    margin-bottom: 1.2rem;
-  }
-  .veges .buy .inner-section h5 {
-    font-size: 2.6rem;
-    margin-bottom: 3rem;
-  }
-  .veges .buy .inner-section #buyBtn {
-    font-size: 1.3rem;
-    margin-top: 2rem;
   }
   .veges .objectives .inner-section .part1 {
     margin-bottom: 6rem;
@@ -2328,20 +2325,34 @@ footer #copy {
     margin-left: -14rem;
   }
   .veges .buy {
-    height: 380px;
+    height: auto;
     padding-left: 0vw;
   }
-  .veges .buy .inner-section p {
-    font-size: 1.2rem;
-    color: #BA7411;
-    margin-bottom: 1.2rem;
+  .veges .buy .inner-section {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 4rem 0;
   }
-  .veges .buy .inner-section h5 {
-    font-size: 2rem;
-    margin-bottom: 3rem;
+  .veges .buy .inner-section #up {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #BA7411;
+    margin-bottom: 1.5rem;
+  }
+  .veges .buy .inner-section #bottom {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    line-height: 2rem;
+    font-size: 1.1rem;
+    margin-bottom: 0rem;
+    height: auto;
   }
   .veges .buy .inner-section #buyBtn {
-    font-size: 1rem;
+    background: #293241;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.563rem;
   }
   .veges .objectives {
     padding: 6rem 0 6rem 0;
